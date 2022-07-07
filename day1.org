@@ -59,18 +59,29 @@ Only exception is the first letter of the identifier cannot be a number or symbo
 We can combine math and assignments to variables in one line. So this:
 
 #+begin_src python :results output
-number = 0
-number = number + 10
+number = 5
+number = number + 10 + 10
 print(number)
 #+end_src
 
 is the same as:
 
 #+begin_src python :results output
-number = 0
+number = 5
+number += 10
 number += 10
 print(number)
 #+end_src
+
+this works with strings too
+
+#+begin_src python :results output
+conversation = "Hi!"
+conversation += " How are you?"
+print(conversation)
+#+end_src
+
+#+RESULTS:
 
 * Madlib
 Now, to practice these concepts, lets write madlibs using source code!
