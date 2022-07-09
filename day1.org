@@ -1,3 +1,4 @@
+#+PROPERTY: header-args :results output
 
 * Intro
 
@@ -21,7 +22,7 @@ Next we will go over some examples of source code. You can type the source code 
 
 Python can do math
 
-#+begin_src python :results output
+#+begin_src python
   print(100 + 50 * 3)
 #+end_src
 
@@ -29,14 +30,14 @@ Python can do math
 Python can also handle text which programmers call strings because they are a
 string of characters. Like a necklace with beads where each bead is a letter, number, or symbol. Strings are specified with "" or '' to seperate it from regular source code.
 
-#+begin_src python :results output
+#+begin_src python
 print("print")
 #+end_src
 
 * Variables
 These things (numbers and text) can be assigned to variables
 
-#+begin_src python :results output
+#+begin_src python
 var='hello world'
 print(var)
 #+end_src
@@ -44,21 +45,21 @@ print(var)
 * Identifiers
 Variables can be called anything. The name of a variable is called the *identifier*.
 
-#+begin_src python :results output
+#+begin_src python
 anything='hello blah blah blah'
 print(anything)
 #+end_src
 
 Only exception is the first letter of the identifier cannot be a number or symbol.
 
-#+begin_src python :results output
+#+begin_src python
 1st_char='hello world'
 #+end_src
 
 * The "Plus Equals"
 We can combine math and assignments to variables in one line. So this:
 
-#+begin_src python :results output
+#+begin_src python
 number = 5
 number = number + 10 + 10
 print(number)
@@ -66,7 +67,7 @@ print(number)
 
 is the same as:
 
-#+begin_src python :results output
+#+begin_src python
 number = 5
 number += 10
 number += 10
@@ -75,20 +76,18 @@ print(number)
 
 this works with strings too
 
-#+begin_src python :results output
+#+begin_src python
 conversation = "Hi!"
 conversation += " How are you?"
 print(conversation)
 #+end_src
-
-#+RESULTS:
 
 * Madlib
 Now, to practice these concepts, lets write madlibs using source code!
 
 Here is an example
 
-#+begin_src python :results output
+#+begin_src python
     adjective_1=""
     adjective_2=""
     type_of_bird=""
