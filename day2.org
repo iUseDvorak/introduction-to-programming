@@ -11,8 +11,10 @@ Yesterday we learned about the python interpreter and how it could handle number
 Python can handle lists. In fact, python can handle many kinds of lists. Today we will focus on what programmers call an "array". They can be created like this.
 
 #+BEGIN_SRC python
-  my_array = [ "pig", "cow", "chicken" ]
-  print(my_array)
+  array_of_numbers = [ 0, 1, 99, 1000 ]
+  print(array_of_numbers)
+  animals = [ "pig", "cow", "chicken" ]
+  print(animals)
 #+END_SRC
 
 * Definition of "Index"
@@ -21,11 +23,11 @@ Could someone tell me where they have heard the word "index" before?
 
 * Indexing
 
-In the back of your textbooks you might have an index which gives you the page numbers of vocabulary words for example. This is kind of what we are referring to when we talk about an index of an array. But instead of the page number, the index refers to the position of a thing in a list starting at 0. So the first thing in the list has an index of 0, the second has 1, and the third has an index of 2.
+In the back of your science textbooks you might have an index which gives you the page numbers of vocabulary words. This is simular to what we are referring to when we talk about an index of an array. But instead of the page number, the index refers to the ordered position of the vocab word in the book starting at 0. So the first vocab word has an index of 0, the second has 1, and the third has an index of 2.
 
 * Indexing Example
 
-In this example we are giving the index [1] to the list of items.
+In this example we are giving the index [1] to the list of items. We use the "[]" to make it clear to python we want to index the list.
 
 #+BEGIN_SRC python
   my_array = [ "pig", "cow", "chicken" ]
@@ -43,7 +45,7 @@ Lists can be created with no items.
 
 * Adding to List
 
-Once created, either empty or with items, lists can be added to using the "append" command used like this.
+Once created, either empty or with items, lists can be added to using the "append" command like this.
 
 #+BEGIN_SRC python
   array = []
@@ -51,9 +53,6 @@ Once created, either empty or with items, lists can be added to using the "appen
   array.append("goat")
   print(array)
 #+END_SRC
-
-#+RESULTS:
-: ['cow', 'goat']
 
 * Removing from list
 
@@ -75,26 +74,21 @@ Remember we discussed that an index is a number refering to a position of an ite
   print(my_array)
 #+END_SRC
 
-#+RESULTS:
-: ['pig', 'chicken']
-
 * 2 Dimensional Arrays
 
 Arrays can hold anything. This includes other arrays. So the following array has different animals seperated by species.
 
 #+BEGIN_SRC python
-  animals = [ [ "Mocking", "Blue", "Cardinal" ],
-              [ "Polar", "Grizzly", "Black" ],
-              [ "Retriever", "Poodle", "Lab" ] ]
-  print(animals)
+animals = [ [ "Mocking", "Blue", "Cardinal" ],
+            [ "Polar", "Grizzly", "Black" ],
+            [ "Retriever", "Poodle", "Lab" ] ]
 #+END_SRC
-
-#+RESULTS:
-: [['Mocking', 'Blue', 'Cardinal'], ['Polar', 'Grizzly', 'Black'], ['Retriever', 'Poodle', 'Lab']]
 
 * Tic Tac Toe
 
 To practice using 2 dimensianal arrays, we will play tic tac toe with a partner. It will not automatically determine a winner but will just keep track of the state of the board.
+
+* Game Board
 
 #+BEGIN_SRC python
   game_board = [ [ " ", " ", " " ], [ " ", " ", " " ], [ " ", " ", " " ] ]
@@ -104,6 +98,6 @@ To practice using 2 dimensianal arrays, we will play tic tac toe with a partner.
 #+END_SRC
 
 #+RESULTS:
-: [' ', ' ', ' ']
 : [' ', 'X', ' ']
+: [' ', ' ', 'O']
 : [' ', ' ', ' ']
