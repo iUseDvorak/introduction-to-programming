@@ -77,3 +77,33 @@ Remember we discussed that an index is a number refering to a position of an ite
 
 #+RESULTS:
 : ['pig', 'chicken']
+
+* 2 Dimensional Arrays
+
+Arrays can hold anything. This includes other arrays. So the following array has different animals seperated by species.
+
+#+BEGIN_SRC python
+  animals = [ [ "Mocking", "Blue", "Cardinal" ],
+              [ "Polar", "Grizzly", "Black" ],
+              [ "Retriever", "Poodle", "Lab" ] ]
+  print(animals)
+#+END_SRC
+
+#+RESULTS:
+: [['Mocking', 'Blue', 'Cardinal'], ['Polar', 'Grizzly', 'Black'], ['Retriever', 'Poodle', 'Lab']]
+
+* Tic Tac Toe
+
+To practice using 2 dimensianal arrays, we will play tic tac toe with a partner. It will not automatically determine a winner but will just keep track of the state of the board.
+
+#+BEGIN_SRC python
+  game_board = [ [ " ", " ", " " ], [ " ", " ", " " ], [ " ", " ", " " ] ]
+  print(game_board[0])
+  print(game_board[1])
+  print(game_board[2])
+#+END_SRC
+
+#+RESULTS:
+: [' ', ' ', ' ']
+: [' ', 'X', ' ']
+: [' ', ' ', ' ']
