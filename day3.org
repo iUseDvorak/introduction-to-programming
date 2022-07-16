@@ -10,7 +10,7 @@ So the last two days we learned how to add and assign variables to text and numb
 
 $$ y = mx + b $$
 
-We all know functions like this from math class. This is the equation for a straight line. The input to the function is $$ x $$ and the output is $$ y $$. $$ m $$ and $$ b $$ are constants or in other words always the same number.
+We all know functions like this from math class. This is the equation for a straight line. The input to the function is $x$ and the output is $y$. $m$ and $b$ are constants or in other words always the same number.
 
 * Python Functions
 
@@ -21,15 +21,15 @@ We can create this function in python which would look like this.
       return 2 * x + 5
 #+END_SRC
 
-What is our slope ($$ m $$) and y-intercept ($$ b $$) in this example?
+What is our slope ( $m$ ) and y-intercept ( $b$ ) in this example?
 
 
 
-Answer: $$ m = 2, b = 5 $$
+Answer: $m = 2, b = 5$
 
 * Invoking Functions
 
-When we want the computer to return the output of a function, we write what programmers call the *invocation* of the function. It is exactly the same way we write it in algebra. We put the name of the function followed by parentheses and the parameters like $$ y(10) $$.
+When we want the computer to return the output of a function, we write what programmers call the *invocation* of the function. It is exactly the same way we write it in algebra. We put the name of the function followed by parentheses and the parameters like $y(10)$.
 
 * Python Invocation
 
@@ -41,6 +41,3 @@ This is executing a function in python.
 
   print( y(4) )
 #+END_SRC
-
-#+RESULTS:
-: 13
