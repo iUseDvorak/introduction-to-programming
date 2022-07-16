@@ -13,7 +13,7 @@ When you ask Siri or Alexa to do something on your phone, you are programming. S
 The text we use to feed into the python interpreter is called *source code*.
 
 * Print
-The first python word we learn is "print". Python will /print/ its interpretation of whatever arguments are given to the "print" command. Remember, computers are just input and output. If our source code is "print(bannana)". Python will be like, "Okay, I'll print out to you whataver I think a 'bannana' is".
+The first python word we learn is "print". Python will /print/ its interpretation of whatever arguments are given to the "print" command. Remember, computers are just input and output. If our source code is "print(banana)". Python will be like, "Okay, I'll print out to you whatever I think a 'banana' is".
 
 * Examples
 Next we will go over some examples of source code. You can type the source code into your interactive interpreter so you can play with them. I'll demonstrate.
@@ -28,7 +28,7 @@ Python can do math
 
 * Text
 Python can also handle text which programmers call strings because they are a
-string of characters. Like a necklace with beads where each bead is a letter, number, or symbol. Strings are specified with "" or '' to seperate it from regular source code.
+string of characters. Like a necklace with beads where each bead is a letter, number, or symbol. Strings are specified with "" or '' to separate it from regular source code.
 
 #+begin_src python
 print("print")
