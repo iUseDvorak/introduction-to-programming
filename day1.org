@@ -7,87 +7,90 @@
 Computers are *deterministic* meaning the same input will always produce the same output. For the sake of simplicity in this class, the input and output will always be text. Just like you use words to ask your mom to make you a sandwich, programmers use words to give instructions to the computer.
 
 * Interpreters
-When you ask Siri or Alexa to do something on your phone, you are programming. Siri and Alexa are a type of *interpreter*. They are very good at interpreting human language. But today we are going to learn about a different interpreter. The python interpreter. Although it is much more picky than Siri and Alexa, its depth allows us to do things those ladies could only dream of. This is true for any programming language but today we are focusing on python.
+When you ask Siri or Alexa to do something on your phone, you are programming. Siri and Alexa are a type of *interpreter*. They are very good at interpreting human language. But today we are going to learn about a different interpreter. The javascript interpreter. Although it is much more picky than Siri and Alexa, its depth allows us to do things those ladies could only dream of. This is true for any programming language but today we are focusing on javascript.
 
-* Python Code
-The text we use to feed into the python interpreter is called *source code*.
+* Javascript Code
+The text we use to feed into the javascript interpreter is called *source code*.
 
 * Print
-The first python word we learn is "print". Python will /print/ its interpretation of whatever arguments are given to the "print" command. Remember, computers are just input and output. If our source code is "print(banana)". Python will be like, "Okay, I'll print out to you whatever I think a 'banana' is".
+The first javascript word we learn is "print". Javascript will /print/ its interpretation of whatever arguments are given to the "print" command. Remember, computers are just input and output. If our source code is "print(banana)". Javascript will be like, "Okay, I'll print out to you whatever I think a 'banana' is".
 
 * Examples
 Next we will go over some examples of source code. You can type the source code into your interactive interpreter so you can play with them. I'll demonstrate.
 
 * Numbers
 
-Python can do math
+Javascript can do math
 
-#+begin_src python
-  print(100 + 50 * 3)
+#+begin_src js
+  console.log(100 + 50 * 3)
 #+end_src
 
 * Text
-Python can also handle text which programmers call strings because they are a
-string of characters. Like a necklace with beads where each bead is a letter, number, or symbol. Strings are specified with "" or '' to separate it from regular source code.
+Javascript can also handle text which programmers call strings because they are a string of characters. Like a necklace with beads where each bead is a letter, number, or symbol. Strings are specified with "" or '' to separate it from regular source code.
 
-#+begin_src python
-print("print")
+#+begin_src js
+console.log("log")
 #+end_src
 
 * Variables
 These things (numbers and text) can be assigned to variables
 
-#+begin_src python
-var='hello world'
-print(var)
+#+begin_src js
+var='hello world';
+console.log(var)
 #+end_src
+
+#+RESULTS:
 
 * Identifiers
 Variables can be called anything. The name of a variable is called the *identifier*.
 
-#+begin_src python
+#+begin_src js
 anything='hello blah blah blah'
-print(anything)
+console.log(anything)
 #+end_src
 
 * Identifier Restrictions
 
 Identifiers cannot contain spaces
 
-#+begin_src python
+#+begin_src js
 two words='hello world'
 #+end_src
 
 and the first letter of the identifier cannot be a number or symbol
 
-#+begin_src python
+#+begin_src js
 1st_char='hello world'
 #+end_src
 
 * The "Plus Equals"
 We can combine math and assignments to variables in one line. So this:
 
-#+begin_src python
+#+begin_src js
 number = 5
 number = number + 10 + 10
-print(number)
+console.log(number)
 #+end_src
+
+#+RESULTS:
 
 is the same as:
 
-#+begin_src python
+#+begin_src js
 number = 5
 number += 10
 number += 10
-print(number)
+console.log(number)
 #+end_src
 
 this works with strings too
 
-#+begin_src python
+#+begin_src js
 conversation = "Hi!"
 conversation += " How are you?"
-print(conversation)
+console.log(conversation)
 #+end_src
 
 * Madlib
@@ -95,11 +98,13 @@ Now, to practice these concepts, lets write madlibs using source code!
 
 Here is an example
 
-#+begin_src python
+#+begin_src js
     adjective_1=""
     adjective_2=""
     type_of_bird=""
     room_in_house=""
     verb_past_tense=""
-    print("It was a " + adjective_1 + ", cold November day. I woke up to the " + adjective_2 + " smell of " + type_of_bird + " roasting in the " + room_in_house + " downstairs. I " + verb_past_tense + " down the stairs to see if I could help.")
+    console.log("It was a " + adjective_1 + ", cold November day. I woke up to the " + adjective_2 + " smell of " + type_of_bird + " roasting in the " + room_in_house + " downstairs. I " + verb_past_tense + " down the stairs to see if I could help.")
 #+end_src
+
+#+RESULTS:

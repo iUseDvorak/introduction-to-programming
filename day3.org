@@ -2,42 +2,95 @@
 
 * Intro
 
-#+title: Functions
+#+title: Arrays
 
-So the last two days we learned how to add and assign variables to text and numbers. We also learned to create lists of these values which programmers call arrays.
+Yesterday we learned about the javascript interpreter and how it could handle numbers, text, and variables. We can add them together with the "+" symbol. We can set variables with the "=" sign. And lastly we learned we could combine the plus and the equals to modify a variable relative to its previous value.
 
-* Algebra
+* Lists
 
-$$ y = mx + b $$
+Javascript can handle lists. In fact, javascript can handle many kinds of lists. Today we will focus on what programmers call an *array*. They can be created like this.
 
-We all know functions like this from math class. This is the equation for a straight line. The input to the function is $x$ and the output is $y$. $m$ and $b$ are constants or in other words always the same number.
-
-* Python Functions
-
-We can create this function in python which would look like this.
-
-#+BEGIN_SRC python
-  def y(x):
-      return 2 * x + 5
+#+BEGIN_SRC js
+  array_of_numbers = [ 0, 1, 99, 1000 ]
+  animals = [ "pig", "cow", "chicken" ]
 #+END_SRC
 
-What is our slope ( $m$ ) and y-intercept ( $b$ ) in this example?
+* Definition of "Index"
 
+Could someone tell me where they have heard the word "index" before?
 
+* Indexing
 
-Answer: $m = 2, b = 5$
+In the back of your science textbooks you might have an *index* which gives you the page numbers of vocabulary words. This is similar to what we are referring to when we talk about an index of an array. But instead of the page number, the index refers to the ordered position of the vocab word in the book starting at 0. So the first vocab word has an index of 0, the second has 1, and the third has an index of 2.
 
-* Invoking Functions
+* Indexing Example
 
-When we want the computer to return the output of a function, we write what programmers call the *invocation* of the function. It is exactly the same way we write it in algebra. We put the name of the function followed by parentheses and the parameters like $y(10)$.
+In this example we are giving the index [1] to the list of items. We use the *[]* to make it clear to javascript we want to index the list.
 
-* Python Invocation
+#+BEGIN_SRC js
+  my_array = [ "pig", "cow", "chicken" ]
+  console.log(my_array[1])
+#+END_SRC
 
-This is executing a function in python.
+* Empty List
 
-#+BEGIN_SRC python
-  def y(x):
-      return 2 * x + 5
+Lists can be created with no items.
 
-  print( y(4) )
+#+BEGIN_SRC js
+  empty_array = []
+  console.log(empty_array)
+#+END_SRC
+
+* Adding to List
+
+Once created, either empty or with items, lists can be added to using the *push* command like this.
+
+#+BEGIN_SRC js
+  array = []
+  array.push("cow")
+  array.push("goat")
+  console.log(array)
+#+END_SRC
+
+* Removing from list
+
+We can use the *filter* command to filter the list. In this case we filter items that are not "cow".
+
+#+BEGIN_SRC js
+  my_array = [ "pig", "cow", "chicken" ]
+  my_array = my_array.filter(item => item != "cow")
+  console.log(my_array)
+#+END_SRC
+
+* Deleting by index
+
+Remember we discussed that an index is a number referring to a position of an item on a list. We can use the *splice* command to remove an item only using the index. The second argument states how many elements to remove.
+
+#+BEGIN_SRC js
+  my_array = [ "pig", "cow", "chicken" ]
+  my_array.splice(1, 1)
+  console.log(my_array)
+#+END_SRC
+
+* 2 Dimensional Arrays
+
+Arrays can hold anything. This includes other arrays. So the following array has different animals separated by species.
+
+#+BEGIN_SRC js
+animals = [ [ "Mocking", "Blue", "Cardinal" ],
+            [ "Polar", "Grizzly", "Black" ],
+            [ "Retriever", "Poodle", "Lab" ] ]
+#+END_SRC
+
+* Tic Tac Toe
+
+To practice using 2 dimensional arrays, we will play tic tac toe with a partner. It will not automatically determine a winner but will just keep track of the state of the board.
+
+* Game Board
+
+#+BEGIN_SRC js
+  game_board = [ [ " ", " ", " " ], [ " ", " ", " " ], [ " ", " ", " " ] ]
+  console.log(game_board[0])
+  console.log(game_board[1])
+  console.log(game_board[2])
 #+END_SRC
