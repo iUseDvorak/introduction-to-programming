@@ -3,28 +3,26 @@ Topics Covered in chronological order
 
 Plan for about 80 days of stuff
 
-| Topic                  | days |
-|------------------------+------|
-| History of Computing   |    2 |
-| Scratch Basics         |    2 |
-| Scratch 3D Cube        |    1 |
-| Scratch Project        |    5 |
-| Firefox + HTML         |    1 |
-| CSS                    |    1 |
-| [[./js_math.org]]          |    1 |
-| [[./js_functions.org]]     |    1 |
-| [[./js_arrays.org]]        |    1 |
-| Javascript HTML        |    2 |
-| Github HTML Page       |    1 |
-| Javascript CSS         |    3 |
-| Javascript Events      |    3 |
-| Javascript Art         |    3 |
-| Javascript Game        |    5 |
-| Github Version History |    1 |
-| Parts of a Cell Phone  |    5 |
-| Parts of a Computer    |    5 |
-| Parts of an OS         |    5 |
-| Parts of a Team        |    5 |
-|------------------------+------|
-|                        |   53 |
+| Topic                   | days |
+|-------------------------+------|
+| History of Computing    |    2 |
+| Scratch Basics          |    2 |
+| Scratch 3D Cube         |    1 |
+| Scratch Project         |    5 |
+| Firefox + HTML          |    3 |
+| CSS                     |    3 |
+| Github HTML Page        |    1 |
+| [[./js_math.org]]           |    1 |
+| [[./js_functions.org]]      |    1 |
+| [[./js_arrays.org]]         |    1 |
+| Javascript HTML         |    2 |
+| Javascript CSS          |    3 |
+| Javascript Events       |    3 |
+| Javascript Art          |    5 |
+| Javascript Game         |   10 |
+| Github Version History  |    1 |
+| [[./parts_of_computer.org]] |    5 |
+| GSM Design Project      |    5 |
+|-------------------------+------|
+| Total                   |   54 |
 #+TBLFM: @>$2=vsum(@2$2..@-I$2)
