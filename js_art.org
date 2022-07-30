@@ -1,3 +1,5 @@
+* Spiral
+
 #+BEGIN_SRC js
   var c = document.createElement("canvas");
   document.body.appendChild(c);
@@ -20,4 +22,22 @@
   }
 #+END_SRC
 
-[[~/Downloads/spiral.png]]
+[[./Pictures/spiral.png]]
+* Squares
+
+#+BEGIN_SRC js
+  function createSquare() {
+      square = document.createElement("div")
+      document.body.appendChild(square)
+      square.style.position = "absolute"
+      square.style.width = "50px"
+      square.style.height = "50px"
+      square.style.left = Math.random() * 1000
+      square.style.top = Math.random() * 500
+      square.style.background = "#" + ((1<<24)*Math.random() | 0).toString(16)
+      setTimeout(createSquare, 1000)
+  }
+  createSquare()
+#+END_SRC
+
+[[./Pictures/squares.png]]
