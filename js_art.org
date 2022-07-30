@@ -1,0 +1,23 @@
+#+BEGIN_SRC js
+  var c = document.createElement("canvas");
+  document.body.appendChild(c);
+  c.width = screen.width;
+  c.height = screen.height;
+  var ctx = c.getContext("2d");
+  ctx.lineWidth = 2;
+  for (var x = 0; x < screen.width; x += 1) {
+      if (x % 100 == 0) {
+	  ctx.strokeStyle = "#" + ((1<<24)*Math.random() | 0).toString(16)
+      }
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(screen.width-x, screen.height);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(0, x);
+      ctx.lineTo(screen.width, screen.height-x);
+      ctx.stroke();
+  }
+#+END_SRC
+
+[[~/Downloads/spiral.png]]
