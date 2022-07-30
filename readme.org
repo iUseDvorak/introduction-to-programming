@@ -1,8 +1,6 @@
 
 Topics Covered in chronological order
 
-Plan for about 80 days of stuff
-
 | Topic                   | days |
 |-------------------------+------|
 | History of Computing    |    2 |
@@ -18,7 +16,7 @@ Plan for about 80 days of stuff
 | Javascript HTML         |    2 |
 | Javascript CSS          |    3 |
 | Javascript Events       |    3 |
-| Javascript Art          |    5 |
+| [[./js_art.org]]            |    5 |
 | Javascript Game         |   10 |
 | Github Version History  |    1 |
 | [[./parts_of_computer.org]] |    5 |
