@@ -41,3 +41,50 @@
 #+END_SRC
 
 [[./Pictures/squares.png]]
+* Fractal
+
+#+BEGIN_SRC js
+function createCircle(radius) {
+    var circle = document.createElement("div")
+    circle.style.width = radius * 2;
+    circle.style.height = radius * 2;
+    circle.style.borderRadius = radius * 2 + "px";
+    circle.style.borderWeight = "1px";
+    circle.style.borderStyle = "solid";
+    circle.style.position = "absolute"
+    circle.style.background = "#" + ((1<<24)*Math.random() | 0).toString(16)
+    return circle;
+}
+var initialRadius = window.innerWidth / 6
+var parent = createCircle(initialRadius);
+document.body.appendChild(parent);
+parent.style.left = window.innerWidth / 2 - initialRadius
+parent.style.top = window.innerHeight / 2 - initialRadius
+
+function createChildren(parent, parentRadius, depth, index) {
+    var children = [];
+    var newRadius = parentRadius / 2.1;
+    for (var i = 0; i < 4; i++) {
+	var child = createCircle(newRadius);
+	parent.appendChild(child)
+	child.style.marginLeft = parentRadius - newRadius - 3
+	child.style.marginTop = parentRadius - newRadius - 3
+	children.push(child);
+    }
+    var offsetRadius = parentRadius + newRadius + 3;
+    children[0].style.transform = `translate(${offsetRadius}px, 0px)`
+    children[2].style.transform = `translate(-${offsetRadius}px, 0px)`
+    children[3].style.transform = `translate(0px, ${offsetRadius}px)`
+    children[1].style.transform = `translate(0px, -${offsetRadius}px)`
+    if (depth > 0) {
+	for (var i = 0; i < 4; i++) {
+	    createChildren(children[i], newRadius, depth-1, (i+2) % 4)
+	}
+    }
+    children[index].style.display = "none";
+}
+
+createChildren(parent, initialRadius, 5, 5)
+#+END_SRC
+
+[[./Pictures/fractal.png]]
