@@ -60,9 +60,10 @@ document.body.appendChild(parent);
 parent.style.left = window.innerWidth / 2 - initialRadius
 parent.style.top = window.innerHeight / 2 - initialRadius
 
-function createChildren(parent, parentRadius, depth, index) {
-    var children = [];
-    var newRadius = parentRadius / 2.1;
+function createChildren(parent, parentRadius, depth, trunkIndex) {
+    let children = [];
+    let newRadius = parentRadius / 2;
+    // align circles to center of parent first
     for (var i = 0; i < 4; i++) {
 	var child = createCircle(newRadius);
 	parent.appendChild(child)
@@ -70,20 +71,25 @@ function createChildren(parent, parentRadius, depth, index) {
 	child.style.marginTop = parentRadius - newRadius
 	children.push(child);
     }
-    var offsetRadius = parentRadius + newRadius;
-    children[0].style.transform = `translate(${offsetRadius}px, 0px)`
-    children[2].style.transform = `translate(-${offsetRadius}px, 0px)`
-    children[3].style.transform = `translate(0px, ${offsetRadius}px)`
-    children[1].style.transform = `translate(0px, -${offsetRadius}px)`
+    // then offset 4 different directions
+    let offsetRadius = parentRadius + newRadius;
+    children[0].style.marginLeft = `calc(${children[0].style.marginLeft} + ${offsetRadius}px)`
+    children[2].style.marginLeft = `calc(${children[2].style.marginLeft} - ${offsetRadius}px)`
+    children[3].style.marginTop = `calc(${children[3].style.marginTop} + ${offsetRadius}px)`
+    children[1].style.marginTop = `calc(${children[1].style.marginTop} - ${offsetRadius}px)`
+    // recurse children
     if (depth > 0) {
 	for (var i = 0; i < 4; i++) {
 	    createChildren(children[i], newRadius, depth-1, (i+2) % 4)
 	}
     }
-    children[index].style.display = "none";
+    // lastly hide the child that was offset on top of the parent
+    if (trunkIndex != undefined) {
+	children[trunkIndex].style.display = "none";
+    }
 }
 
-createChildren(parent, initialRadius, 5, 5)
+createChildren(parent, initialRadius, 6)
 #+END_SRC
 
 [[./Pictures/fractal.png]]
