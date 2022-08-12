@@ -1,26 +1,20 @@
 
 Topics Covered in chronological order
 
-| Topic                   | days |
-|-------------------------+------|
-| History of Computing    |    2 |
-| Scratch Basics          |    2 |
-| Scratch 3D Cube         |    1 |
-| Scratch Project         |    5 |
-| Firefox + HTML          |    3 |
-| CSS                     |    3 |
-| Github HTML Page        |    1 |
-| [[./js_math.org]]           |    1 |
-| [[./js_functions.org]]      |    1 |
-| [[./js_arrays.org]]         |    1 |
-| Javascript HTML         |    2 |
-| Javascript CSS          |    3 |
-| Javascript Events       |    3 |
-| [[./js_art.org]]            |    5 |
-| Javascript Game         |   10 |
-| Github Version History  |    1 |
-| [[./parts_of_computer.org]] |    5 |
-| GSM Design Project      |    5 |
-|-------------------------+------|
-| Total                   |   54 |
+| Topic                  | days |
+|------------------------+------|
+| [[./js_math.org]]          |    1 |
+| [[./js_functions.org]]     |    1 |
+| [[./js_arrays.org]]        |    1 |
+| Github HTML Page       |    1 |
+| HTML                   |    3 |
+| CSS                    |    3 |
+| Javascript HTML        |    2 |
+| Javascript CSS         |    3 |
+| Javascript Events      |    3 |
+| [[./js_art.org]]           |    5 |
+| Javascript Game        |   10 |
+| Github Version History |    1 |
+|------------------------+------|
+| Total                  |   34 |
 #+TBLFM: @>$2=vsum(@2$2..@-I$2)
