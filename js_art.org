@@ -183,3 +183,43 @@ createChildren(parent, initialRadius, 6)
 #+END_SRC
 
 [[./Pictures/stars.png]]
+* Honeycomb
+
+#+BEGIN_SRC js
+  var c = document.createElement("canvas");
+  document.body.appendChild(c);
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+  var ctx = c.getContext("2d");
+  ctx.lineWidth = 1;
+  let Ystep = 50;
+  let Xstep = 50 * Math.sqrt(2);
+  var color = "#551155"
+  for (var y = -Ystep; y < window.innerHeight; y += Ystep) {
+      for (var x = -Xstep; x < window.innerWidth; x += Xstep) {
+	  let rowStagger = 0;
+	  let rowTransparency = 230;
+	  if (y % (Ystep * 2) == 0) {
+	      rowStagger = Xstep / 2;
+	      rowTransparency = 185;
+	  }
+	  let stagger = Xstep / 2;
+	  ctx.beginPath();
+	  ctx.fillStyle = color + rowTransparency.toString(16);
+	  ctx.moveTo(x + rowStagger, y);
+	  ctx.lineTo(x + rowStagger + Xstep, y);
+	  ctx.lineTo(x + rowStagger - stagger + Xstep, y + Ystep);
+	  ctx.closePath();
+	  ctx.fill();
+	  ctx.fillStyle = color + (rowTransparency - 30).toString(16);
+	  ctx.beginPath();
+	  ctx.moveTo(x + rowStagger, y);
+	  ctx.lineTo(x + rowStagger - stagger, y + Ystep);
+	  ctx.lineTo(x + rowStagger - stagger + Xstep, y + Ystep);
+	  ctx.closePath();
+	  ctx.fill()
+      }
+  }
+#+END_SRC
+
+[[./Pictures/honeycomb.png]]
