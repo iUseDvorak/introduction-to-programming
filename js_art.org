@@ -93,3 +93,50 @@ createChildren(parent, initialRadius, 6)
 #+END_SRC
 
 [[./Pictures/fractal.png]]
+* Fish
+
+#+BEGIN_SRC js
+  var c = document.createElement("canvas");
+  document.body.appendChild(c);
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+  var ctx = c.getContext("2d");
+  ctx.lineWidth = 1;
+  for (var x = 0; x < window.innerWidth; x += 1) {
+      let sinInput = x / window.innerWidth * 40;
+      let amplitude = 30;
+      ctx.strokeStyle = "#000088"
+      ctx.beginPath();
+      ctx.moveTo(x, window.innerHeight);
+      ctx.lineTo(x, window.innerHeight / 6 + Math.sin(sinInput) * amplitude);
+      ctx.stroke();
+      sinInput += Math.PI / 2;
+      ctx.strokeStyle = "#000055"
+      ctx.beginPath();
+      ctx.moveTo(x, window.innerHeight);
+      ctx.lineTo(x, window.innerHeight / 3 + Math.sin(sinInput) * amplitude);
+      ctx.stroke();
+      sinInput += Math.PI / 2;
+      ctx.strokeStyle = "#000033"
+      ctx.beginPath();
+      ctx.moveTo(x, window.innerHeight);
+      ctx.lineTo(x, window.innerHeight / 2 + Math.sin(sinInput) * amplitude);
+      ctx.stroke();
+  }
+  function makeFish() {
+      var fish = document.createElement("img");
+      document.body.appendChild(fish);
+      fish.src = "./fish.svg"
+      fish.style.position = "absolute"
+      fish.style.width = Math.random() * 10 + 5 + "vw"
+      fish.style.height = Math.random() * 10 + 5 + "vh"
+      fish.style.left = Math.random() * window.innerWidth;
+      fish.style.bottom = Math.random() * window.innerHeight / 4;
+      fish.style.transform = `rotateZ(${Math.random() * 360}deg)`
+  }
+  for (var x = 0; x < 50; x++) {
+      makeFish();
+  }
+#+END_SRC
+
+[[./Pictures/fish.png]]
