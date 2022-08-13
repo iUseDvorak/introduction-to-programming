@@ -140,3 +140,46 @@ createChildren(parent, initialRadius, 6)
 #+END_SRC
 
 [[./Pictures/fish.png]]
+* Stars
+
+#+BEGIN_SRC js
+  document.body.style.backgroundColor = "black";
+  var c = document.createElement("canvas");
+  document.body.appendChild(c);
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+  var ctx = c.getContext("2d");
+  ctx.lineWidth = 1;
+  for (var star = 0; star < 40; star++) {
+      let corners = Math.round(Math.random() * 5 + 3)
+      let x = Math.random() * window.innerWidth
+      let y = Math.random() * window.innerHeight
+      let radius = Math.random() * 150 + 50;
+      let offsetWidth = Math.random() * 10 + radius / 10;
+      ctx.strokeStyle = "#" + ((1<<24)*Math.random() | 0).toString(16)
+      for (let i = 0; i < corners; i++) {
+	  for (var xOffset = -offsetWidth; xOffset <= offsetWidth; xOffset++) {
+	      for (var yOffset = -offsetWidth; yOffset <= offsetWidth; yOffset++) {
+		  ctx.beginPath();
+		  ctx.moveTo(x + xOffset, y + yOffset);
+		  let cornerRotation = i * Math.PI * 2 / corners;
+		  ctx.lineTo(Math.cos(cornerRotation) * radius + x, Math.sin(cornerRotation) * radius + y);
+		  ctx.stroke();
+		  // shading
+		  if (xOffset > 0 && yOffset > 0) {
+		      let oldColor = ctx.strokeStyle;
+		      ctx.strokeStyle = "#FFFFFF55"
+		      ctx.beginPath();
+		      ctx.moveTo(x + xOffset, y + yOffset);
+		      let cornerRotation = i * Math.PI * 2 / corners;
+		      ctx.lineTo(Math.cos(cornerRotation) * radius + x, Math.sin(cornerRotation) * radius + y);
+		      ctx.stroke();
+		      ctx.strokeStyle = oldColor;
+		  }
+	      }
+	  }
+      }
+  }
+#+END_SRC
+
+[[./Pictures/stars.png]]
