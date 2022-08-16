@@ -1,0 +1,25 @@
+#+TITLE: What is a Bit?
+
+Yesterday we discussed logic gates and how they can control the flow of electric currents. We also learned that the strength of the current did not matter, but only whether electric current flows through the wire at all. It is either on or off.
+
+* The Bit
+
+The bit is a way of representing this on or off state. We use a 0 to communicate that no electric current is present. We use a 1 to communicate that electric current is indeed flowing through a wire. These are the only two numbers that computers understand. Why? Because a computer processor is actually made of millions of logic gates. So if you want a computer processor to do something, it /has/ to work with bits. 0s and 1s.
+
+* Other numbers?
+
+But what about a calculator? A calculator can operate on any digits, 0-9. So how does the calculator do it when it is actually just 0s and 1s?
+
+[[https://www.youtube.com/watch?v=zELAfmp3fXY][Well, this is how]]
+
+* Text?
+
+Again, we also know that computers can work with text, not just numbers. A computer is processing the very text you are reading right now. So how do computers work with text when all they understand is numbers? Simple, we assign each letter to a number.
+
+[[https://www.w3schools.com/CHARSETS/ref_html_ascii.asp][ASCII]]
+
+* Digits with Logic Gates
+
+Again, using [[logic.ly/demo]], add four switches and a 4-bit digit display and connect them together. Play with it and try to understand how it works. If it is still fuzzy ask for help. When you feel confident on how it works, let the teacher know and they will give you a digit that you must display.
+
+If a letter appears on the display, don't panic. The letters ABCDEF correspond to 10, 11, 12, 13, 14, and 15. This is just so the two digit numbers can be displayed with a single character.
