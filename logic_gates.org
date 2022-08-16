@@ -1,0 +1,26 @@
+#+TITLE: What is a bit?
+
+* ENIAC
+
+[[https://www.britannica.com/technology/ENIAC][ENIAC Britannica]]
+
+Before digital computers, big math problems like this where solved with physical circuits. Instead of writing computer code, engineers would have to wire up physical devices that would direct electric current in a precise fashion.
+
+* Electric Current
+
+Since the strength of electric currents where not stable, engineers decided to ignore the current's strength to make their machines more predictable. Instead, the devices where "programmed" only to read if a electric current exists at all. A lightbulb in a circuit is either on or off. Computers do not care about how bright the bulb is.
+
+* Logic Gates
+
+We use common *logic gates* to send currents based on the the presense (or lack there of) of two other currents. As simple as they seem, they are the building blocks of computer processors.
+
+[[https://www.youtube.com/watch?v=pBTuw3BOXsU&list=PL9H1ai1PRZ3Njcug7CQrD_ixpGFus6oxa&index=32][LBP2 Logic Gates]]
+
+[[https://logic.ly/demo]]
+
+* Circuit Breaker
+
+A light switch is the most basic kind of circuit. Start with creating a switch and hook it to a bulb. Label the switch "light switch". Test it.
+
+Create another switch, label it "breaker". Now design a circuit that will disable the light when the breaker is switched ON.
+
