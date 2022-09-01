@@ -6,6 +6,7 @@ Topics Covered in chronological order
 | [[./js_math.org]]          |    1 |
 | [[./js_functions.org]]     |    1 |
 | [[./js_arrays.org]]        |    1 |
+| [[./js_loops.org]]         |    1 |
 | Github HTML Page       |    1 |
 | HTML                   |    3 |
 | CSS                    |    3 |
@@ -16,5 +17,5 @@ Topics Covered in chronological order
 | Javascript Game        |   10 |
 | Github Version History |    1 |
 |------------------------+------|
-| Total                  |   34 |
+| Total                  |   35 |
 #+TBLFM: @>$2=vsum(@2$2..@-I$2)

@@ -1,4 +1,4 @@
-#+TITLE: What is a bit?
+#+TITLE: What is a Logic Gate?
 
 * ENIAC
 
@@ -23,4 +23,3 @@ We use common *logic gates* to send currents based on the the presense (or lack 
 A light switch is the most basic kind of circuit. Start with creating a switch and hook it to a bulb. Label the switch "light switch". Test it.
 
 Create another switch, label it "breaker". Now design a circuit that will disable the light when the breaker is switched ON.
-
