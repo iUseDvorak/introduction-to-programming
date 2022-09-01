@@ -1,4 +1,5 @@
 #+TITLE: Loops in Javascript
+#+PROPERTY: header-args :results output
 
 So far we have learned how javascript can handle numbers, text, and lists. We learned we can assign these things to variables and how to index a list to retrieve a particular element.
 
@@ -22,8 +23,8 @@ The next type of loop is the *for* loop. This is a bit more complicated, but has
 
 * For Loop Example
 
-#+BEGIN_SRC
-for (let i = 0; i < 10; i++) {
+#+BEGIN_SRC js
+for (let i = 0; i <= 10; i++) {
   console.log(i)
 }
 #+END_SRC
