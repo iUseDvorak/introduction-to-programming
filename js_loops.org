@@ -1,0 +1,57 @@
+#+TITLE: Loops in Javascript
+
+So far we have learned how javascript can handle numbers, text, and lists. We learned we can assign these things to variables and how to index a list to retrieve a particular element.
+
+* While Loop
+
+The simplest kind of loop is the *while* loop. It takes in a boolean (a true or false statement) and will continue to loop through the code in its body until that statement is false. For example...
+
+* While Loop Example
+
+#+BEGIN_SRC js
+list = [ 1, 2, 3, 4 ]
+while (list.length > 0) {
+  console.log(list[list.length - 1])
+  list.pop()
+}
+#+END_SRC
+
+* For Loop
+
+The next type of loop is the *for* loop. This is a bit more complicated, but has a simple purpose. To count up or down. It declares a variable and defines how it will be modified everytime the loop is run and for how long... all in the same line!
+
+* For Loop Example
+
+#+BEGIN_SRC
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+#+END_SRC
+
+* Activity
+
+Now the teacher will assign a unique challenge to each group to solve
+
+** Challenge 1
+
+Using a for loop, print the numbers 10 through 20. So 10, 11, 12, ... and so on.
+
+** Challenge 2
+
+First declare an empty list. Then, using a while loop, print the list until it has 10 elements. Add an item to the list every loop.
+
+** Challenge 3
+
+Declare a list with 5 elements. Log the list until it has 2 elements.
+
+** Challenge 4
+
+Using a for loop, print the numbers 20 through 10 in descending order. So 20, 19, 18, ... and so on.
+
+** Challenge 5
+
+First declare a variable equal to 0. Then, using a while loop, print the number until it is equal to 10. Add one to the number every loop.
+
+** Challenge 6
+
+First declare a variable equal to 10. Then, using a while loop, print the number until it is equal to 0. Subtract one to the number every loop.
