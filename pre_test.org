@@ -1,0 +1,49 @@
+* Short Answer
+
+What is the acronym for the computer's processor? CPU
+
+What is the acronym for the computer's graphics card? GPU
+
+What is the acronym for the computer's power converter? PSU
+
+What is the acronym for the software that controls the computer's hardware? OS
+
+What is the acronym for the software that controls the windows on the screen? WM
+
+What is the acronym for the computer's interface that utilizes a mouse? GUI
+
+What is the acronym for the computer's interface that utilizes a terminal? TUI
+
+What is the acronym for a local network? LAN
+
+What is the 4 letter term for short distance wireless internet? WIFI
+
+What is the acronym for the Hypertext Markup Language? HTML
+
+What is the acronym for the file that defines styles of document(s)? CSS
+
+What is the 4 letter acronym for a registered jack connector found in ethernet cables and network equipment? RJ45
+
+What is the 4 letter acronym for a telephone-type connection for connecting telephones to wall plates? RJ11
+
+
+
+* Word Bank
+
+Memory: Fast but temporary type of data storage
+
+Drive: Unit of physical, permament data storage
+
+Hardware: General term for physical equipment
+
+Software: General term for digital programs
+
+Code: Instructions for the computer made for humans to understand
+
+Shell: Command line interpreter and executor
+
+Display: A common, visual output device
+
+Text: The universal interface
+
+Expansion Slot: Where you would install a new video card

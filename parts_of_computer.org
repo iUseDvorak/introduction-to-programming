@@ -1,49 +1,64 @@
-* Short Answer
+#+TITLE: Hardware
 
-What is the acronym for the computer's processor? CPU
+* Hardware vs Software
 
-What is the acronym for the computer's graphics card? GPU
+Besides electricity, computers need two groups of things to do work. Hardware and software.
 
-What is the acronym for the computer's power converter? PSU
+* What is Hardware
 
-What is the acronym for the software that controls the computer's hardware? OS
+Hardware is the physical devices and components that make up your computer. They are tangible meaning you could touch them, but you might have to take apart your computer to do so.
 
-What is the acronym for the software that controls the windows on the screen? WM
+* What is Software
 
-What is the acronym for the computer's interface that utilizes a mouse? GUI
+Software is the digital programs and routines and are run /on/ the hardware. Software cannot be used without hardware.
 
-What is the acronym for the computer's interface that utilizes a terminal? TUI
+* Brain Example
 
-What is the acronym for a local network? LAN
+Think of a computer like a human brain. The hardware is the cells or neurons that make up the brain. If you where a doctor, you might actually get to feel one! So then what is software? If the brain is your hardware, software would be your /thoughts/. You can not hold an idea. Or a fancy way of putting it, they are /ethereal/. But don't assume that means they don't have value!
 
-What is the 4 letter term for short distance wireless internet? WIFI
+* This Unit
 
-What is the acronym for the Hypertext Markup Language? HTML
+Usually, in this class, we will be learning about software. But this unit will be all about hardware.
 
-What is the acronym for the file that defines styles of document(s)? CSS
+* Cables
 
-What is the 4 letter acronym for a registered jack connector found in ethernet cables and network equipment? RJ45
+The simplest type of hardware are cables. Some cables transfer electricity, some cables transfer data, and some can do both!
 
-What is the 4 letter acronym for a telephone-type connection for connecting telephones to wall plates? RJ11
+* USB
 
+The best example of a cable that can do it all, aka it can transfer data and electricity, is USB which stands for Universal Serial Bus. You have probably heard of it and use them daily. We will look at some pictures of USB. They come in multiple sizes but are all USB.
 
+* USB Diagram
 
-* Word Bank
+[[./Pictures/usb.png]]
 
-Memory: Fast but temporary type of data storage
+* USB History
 
-Drive: Unit of physical, permament data storage
+"A group of seven companies began the development of USB in 1995, Compaq, DEC, IBM, Intel, Microsoft, NEC, and Nortel. The goal was to make it fundamentally easier to connect external devices to PCs by replacing the multitude of connectors at the back of PCs" -Wikipedia
 
-Hardware: General term for physical equipment
+* Video Cables
 
-Software: General term for digital programs
+USB is great for random data. But for video displays we are transferring a lot of data, and that data has a /uniform/ layout. By uniform we mean every second the same amount of data is being transferred, and it is always the same type of data. Pixels to display on the screen. Because the data is uniform we can make specialized cables that are more efficient than USB.
 
-Code: Instructions for the computer made for humans to understand
+* Video Cables - Caveats
+Displays usually have their own power supplies so the electricity from the USB cable is not useful.
 
-Shell: Command line interpreter and executor
+That being said USB-C is now starting to be used for video in some cases.
 
-Display: A common, visual output device
+Also, HDMI is unique because it can transfer audio as well as video which makes it ideal for home theaters. This will be on the test.
 
-Text: The universal interface
+* Video Cables Diagram
 
-Expansion Slot: Where you would install a new video card
+[[./Pictures/video_cables.png]]
+
+* Peripherals
+
+Have you ever heard of peripheral vision? The word refers to the /edge/ of your vision, on the outside of where you are focusing. When we are talking about computer hardware, *peripherals* means all the non-essential hardware in your computer besides the video cables and display. So peripherals are ussualy just your mouse and keyboard, headphones or speakers, and your microphone. You will need to understand this for your test.
+
+* Back of Computer
+
+[[./Pictures/back_of_computer.png]]
+
+* Assignment
+
+Your assignment for today is to think of a pheripheral that you use in your daily life (thats not a built-in part of your chromebook). Look up the type of connector that it uses if you don't know it already. Make sure you know why that connector is being used. Would it be better to have a different type of connector? We will go around the room and hear what everyone has come up with.
