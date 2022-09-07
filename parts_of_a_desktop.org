@@ -36,9 +36,9 @@ Hard drives hold long term data for the computer. So even when the computer is t
 
 [[./Pictures/harddrive_on_desktop.png]]
 
-* Memory
+* RAM (Memory)
 
-Memory holds quick access data. It is very fast, but when the computer is turned off, the data is lost. Another way to describe it is the data is /not/ persistent.
+Random Access Memory (RAM) holds quick access data. It is very fast, but when the computer is turned off, the data is lost. Another way to describe it is the data is /not/ persistent. When your computer launches a program, like chrome, it loads the program from the hard drive into the computer's memory.
 
 * Memory on Desktop
 
