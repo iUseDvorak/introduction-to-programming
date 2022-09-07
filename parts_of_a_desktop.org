@@ -14,7 +14,7 @@ Smart phones and laptops need no explanation. Most of you have one of each of th
 
 Servers and desktops are more powerful than mobile devices at the same price, because they take up more space. They can use bigger parts and have better airflow.
 
-Servers are like desktops but even bigger. Sometimes the size of an entire room. For the sake of simplicity, we can consider super computers, like those that predict weather models, to also be in the server category.
+Servers are like desktops but ussually even bigger. Sometimes the size of an entire room. For the sake of simplicity, we can consider super computers, like those that predict weather models, to also be in the server category.
 
 * Desktop Picture
 
@@ -62,7 +62,7 @@ CPU stands for Central Processing Unit. It is the central brain of the computer.
 
 * GPU
 
-GPU stands for Graphical Processing Unit. It is a specialized processor that handles graphical operations only. Just like the CPU, it works hard and gets very hot and requires its own fans directly on the chip. Again it can be liquid cooled but is less common than it is the CPU.
+GPU stands for Graphical Processing Unit and is also known as a video card. It is a specialized processor that handles graphical operations only. Just like the CPU, it works hard and gets very hot and requires its own fans directly on the chip. Again it can be liquid cooled but is less common than it is the CPU.
 
 * GPU vs CPU
 
