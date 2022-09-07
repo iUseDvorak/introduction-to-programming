@@ -1,0 +1,89 @@
+#+TITLE: Parts of a Computer
+* Types of Computers
+
+Computers come in many shapes and forms. The four most common are
+
+- Smart Phones
+- Laptops
+- Desktops
+- Servers
+
+Smart phones and laptops need no explanation. Most of you have one of each of them.
+
+* Servers and Desktops
+
+Servers and desktops are more powerful than mobile devices at the same price, because they take up more space. They can use bigger parts and have better airflow.
+
+Servers are like desktops but even bigger. Sometimes the size of an entire room. For the sake of simplicity, we can consider super computers, like those that predict weather models, to also be in the server category.
+
+* Desktop Picture
+
+[[./Pictures/desktop.png]]
+
+* Hard Drive
+
+Hard drives hold long term data for the computer. So even when the computer is turned off the data will stay. Another word for this is the data is /persistent/.
+
+* Hard Drive Picture
+
+[[./Pictures/harddrive.png]]
+
+* Hard Drive Diagram
+
+[[./Pictures/diagram.png]]
+
+* Hard Drive on Desktop
+
+[[./Pictures/harddrive_on_desktop.png]]
+
+* Memory
+
+Memory holds quick access data. It is very fast, but when the computer is turned off, the data is lost. Another way to describe it is the data is /not/ persistent.
+
+* Memory on Desktop
+
+[[./Pictures/memory_on_desktop.png]]
+
+* Power Supply
+
+Power supply converts electricity from an outlet so that it is usable and stable for the computer to do work.
+
+* Power Supply on Desktop
+
+[[./Pictures/psu_on_desktop.png]]
+
+* CPU
+
+CPU stands for Central Processing Unit. It is the central brain of the computer. It works so hard it gets very hot and requires a big fan on top of it to cool it off. Sometimes this is replaced with liquid cooling to better vent the heat out of the computer case.
+
+* CPU on Desktop
+
+[[./Pictures/cpu_on_desktop.png]]
+
+* GPU
+
+GPU stands for Graphical Processing Unit. It is a specialized processor that handles graphical operations only. Just like the CPU, it works hard and gets very hot and requires its own fans directly on the chip. Again it can be liquid cooled but is less common than it is the CPU.
+
+* GPU vs CPU
+
+Remember when we said that video cables where specialized just for video? The same reasons apply to the video card. Since video output is /uniform/ aka requires a lot of simular processing every second, we have a special piece of hardware that can do it more efficiently than the cpu. For this reason, the video connectors, where the video cables plug in, are located directly on the gpu. A special hole exists in the case to expose those connectors.
+
+* GPU on Desktop
+
+[[./Pictures/gpu_on_desktop.png]]
+
+* On-Board Graphics
+
+However, keep in mind the GPU is not strictly neccessary. Most laptops do not have graphics cards and this is called /on-board graphics/. They are just slower.
+
+* Disc Drive
+
+Lastly, we will mention the disc drive (*not* disk drive with a 'k'). They are becoming less and less popular as discs become less popular. Most new computers will not have one.
+
+* Disk Drive on Desktop
+
+[[./Pictures/discdrive_on_desktop.png]]
+
+* Assignment
+
+For todays assignment, we will pick out computer parts that we could theoretically buy to build a desktop computer. You will go to [[https://pcpartpicker.com/list/][pcpartpicker]] and choose parts that are compatible. Not all desktop components work together. PC Part Picker will automatically filter your results to components that are compatable. Once you have picked all of your pc parts, show the teacher and they will give you credit for the day.
